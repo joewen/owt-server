@@ -91,7 +91,7 @@ bool FfEncoder::initEncoder(const FrameFormat format)
 
     switch(format) {
         case FRAME_FORMAT_AAC_48000_2:
-            codec = avcodec_find_encoder_by_name("libfdk_aac");
+            codec = avcodec_find_encoder_by_name("aac");
             if (!codec) {
                 ELOG_ERROR_T("Can not find audio encoder %s, please check if ffmpeg/libfdk_aac installed", "libfdk_aac");
                 return false;

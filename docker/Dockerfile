@@ -135,7 +135,7 @@ RUN wget -c ${JSON_LINK} && mv json.hpp /usr/include/
 
 
 # Build OWT specific modules
-ARG OWTSERVER_REPO=https://github.com/open-webrtc-toolkit/owt-server.git
+ARG OWTSERVER_REPO=https://github.com/joewen/owt-server.git
 ARG OPENH264_MAJOR=1
 ARG OPENH264_MINOR=7
 ARG OPENH264_SOVER=4
